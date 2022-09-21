@@ -17,23 +17,6 @@ public class StatisticsService {
         return current_max;
     }
 
-    public long findMin(long[] incomes) {
-        long current_min_index = 0;
-        long current_min = incomes[0];
-        for (long income : incomes)
-            if (current_min > income)
-                current_min = income;
-        return current_min;
-    }
 
-    public long findAverage(long[] incomes) {
-        long average = 0;
-        long sum = 0;
-        for (int i = 0; i < incomes.length; i++) {
-            sum += incomes[i];
-        }
-        average = sum / incomes.length;
-        return average;
-    }
 
 }
